@@ -340,13 +340,20 @@ section {
   flex-direction: row;
   gap: 2.5rem;
   justify-content: space-around;
+  align-items: center; /* Add this to center items vertically */
 }
 
 article {
   display: flex;
+  flex-direction: column; /* Ensure vertical stacking */
   width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  gap: 0.5rem; /* Consistent spacing between icon and text */
+}
+
+article div {
+  text-align: center; /* Center the text within the div */
 }
 
 article .icon {
